@@ -25,6 +25,7 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
 # Move permanent files to Home directory
 replace "./scripts/.zshrc" ".zshrc"
+replace "./scripts/.p10k.zsh" ".p10k.zsh"
 
 # Set Zsh as default shell in Linux
 chsh -s $(which zsh)
@@ -41,8 +42,12 @@ git config --global --add oh-my-zsh.hide-status 1
 
 # Install Powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 # Run Powerlevel10k configuration (running zsh will trigger the config the first time)
-exec zsh 
+#exec zsh
+#p10k configure
+# Need to exit the new shell
+#exit 
 
 # Finish
 echo_success "Dotfiles settings complete."
