@@ -3,7 +3,7 @@
 
 # --------------------------- Theme ------------------------------------
 # ZSH theme
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # --------------------------- Paths ------------------------------------
 # oh-my-zsh path
