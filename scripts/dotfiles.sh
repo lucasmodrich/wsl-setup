@@ -2,6 +2,7 @@
 #
 # Install Oh My Zsh and set dotfiles
 # Install dotfiles and configure git
+# Install Powerlevel10k and run configuration
 
 source ./scripts/utils.sh
 
@@ -37,6 +38,11 @@ git config --global user.email "$GIT_EMAIL"
 git config --global init.defaultBranch main
 git config --global --add oh-my-zsh.hide-dirty 1
 git config --global --add oh-my-zsh.hide-status 1
+
+# Install Powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# Run Powerlevel10k configuration (running zsh will trigger the config the first time)
+exec zsh 
 
 # Finish
 echo_success "Dotfiles settings complete."

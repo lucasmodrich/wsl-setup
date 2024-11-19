@@ -6,6 +6,7 @@ source ./scripts/user.sh
 
 # Global variables
 DOTFILES_DIRECTORY="$PWD"
+DEV_DIRECTORY="${HOME}/Dev"
 
 # Info message
 echo_info() {

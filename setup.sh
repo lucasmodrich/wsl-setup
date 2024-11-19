@@ -27,7 +27,7 @@ fi
 
 # Create a directory for projects and development
 echo_info "Creating Dev directory in Home directory..."
-mkdir ${HOME}/Dev ${HOME}/Dev
+mkdir ${DEV_DIRECTORY}
 
 # Cleanup cached downloads and remove the installation zip and folder
 echo_info "Removing unnecessary files..."
