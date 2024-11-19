@@ -37,7 +37,7 @@ source $ZSH/oh-my-zsh.sh
 alias copyssh="cat < ~/.ssh/id_ed25519.pub | clip.exe | echo '=> Public SSH key copied.'"
 
 # Open developer directory
-alias dev="${HOME}/Developer"
+alias dev="${DEV_DIRECTORY}"
 
 # Open Explorer in current folder
 alias explorer="explorer.exe ."
