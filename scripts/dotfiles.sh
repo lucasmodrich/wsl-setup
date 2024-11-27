@@ -25,7 +25,6 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf
 
 # Move permanent files to Home directory
 replace "./scripts/.zshrc" ".zshrc"
-#replace "./scripts/.p10k.zsh" ".p10k.zsh"
 
 # Set Zsh as default shell in Linux
 chsh -s $(which zsh)
