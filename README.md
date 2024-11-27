@@ -42,6 +42,7 @@ If you already have `Windows` and `WSL` installed, run these commands in `WSL`:
 
 ```
 git clone https://github.com/lucasmodrich/wsl-setup.git
+git checkout oh-my-posh
 chmod 700 wsl-setup/ -R
 cd wsl-setup
 ./setup.sh
