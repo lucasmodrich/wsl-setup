@@ -17,3 +17,4 @@ echo_warning "Use copyssh command to copy the SSH key to the clipboard."
 
 # Finish
 echo_success "Generated SSH key."
+echo_success "If you use GitHub, you will need to add the newly generated SSH Key."

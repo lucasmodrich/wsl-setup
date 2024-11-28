@@ -29,12 +29,14 @@ NPM_CONFIG_PREFIX=~/.npm-global
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  asdf
-  colored-man-pages
-  extract
-  F-Sy-H
+  #asdf
+  #colored-man-pages
+  #extract
+  #F-Sy-H
   zsh-autosuggestions
   zsh-completions
+  git
+  ssh-auto
 )
 
 source $ZSH/oh-my-zsh.sh

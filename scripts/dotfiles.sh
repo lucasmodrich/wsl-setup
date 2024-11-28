@@ -39,6 +39,8 @@ git config --global user.email "$GIT_EMAIL"
 git config --global init.defaultBranch main
 git config --global --add oh-my-zsh.hide-dirty 1
 git config --global --add oh-my-zsh.hide-status 1
+# Force Git to use SSH for all GitHub repos for this user
+git config --global url."git@github.com:$GIT_NAME.insteadOf "https://github.com/$GIT_NAME"
 
 # Install Powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
