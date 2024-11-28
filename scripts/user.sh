@@ -6,11 +6,13 @@
 
 # User variables
 GIT_NAME=""
+GITHUB_USER=""
 GIT_EMAIL=""
 SSH_EMAIL=""
 
 # Guidance
 # - GIT_NAME: name and surname to use in Git settings.
+# - GITHUB_USER: set the githun username
 # - GIT_EMAIL: email to use in Git settings.
 # - SSH_EMAIL: email to use in SSH settings (optional, leave blank if you don't want to run SSH script).
 
