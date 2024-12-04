@@ -28,8 +28,8 @@ sudo apt update && sudo apt install -y git
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs yarn
 
-# Hugo (Snap)
-sudo snap install hugo
+# Hugo
+sudo apt install -y hugo
 
 # Finish
 echo_success "Finished applications installation."
