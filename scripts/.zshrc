@@ -71,3 +71,6 @@ alias winhome="/mnt/c/Users/$(echo $USER)"
 
 # Open .zshrc in VSCode
 alias zshcfg="code ~/.zshrc"
+
+# Hugo Snap Alias
+alias hugo="snap run hugo"
