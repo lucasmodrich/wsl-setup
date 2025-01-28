@@ -23,14 +23,6 @@ export TERM="xterm-256color"
 # Fix EACCES permissions errors when installing packages globally
 NPM_CONFIG_PREFIX=~/.npm-global
 
-# set PATH and environment for go if it exists
-if [ -d "/usr/local/go" ] ; then
-    export GOPATH=$HOME/go
-    export GOBIN=$GOPATH/bin
-    PATH="$GOBIN:/usr/local/go/bin:$PATH"
-    export GOPROXY=https://proxy.golang.org,direct
-fi
-
 # --------------------------- Plugins ----------------------------------
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
