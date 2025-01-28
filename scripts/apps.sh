@@ -28,6 +28,9 @@ sudo apt update && sudo apt install -y git
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs yarn
 
+# Go (Go-Lang)
+sudo apt install -y go-lang
+
 # Hugo (Snap). APT is out of date
 snap install hugo
 
