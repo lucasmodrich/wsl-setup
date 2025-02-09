@@ -18,7 +18,10 @@ sudo apt install -y ubuntu-wsl
 sudo apt install -y build-essential
 
 # Common packages
-sudo apt install -y apt-transport-https ca-certificates curl gawk ssh-askpass tree unzip wget zsh
+sudo apt install -y apt-transport-https ca-certificates curl gawk ssh-askpass tree unzip wget zsh cifs-utils
+
+# GPG (GnuPG)
+sudo apt install -y gpg gnupg gpg-agent
 
 # Git
 sudo add-apt-repository -y ppa:git-core/ppa
