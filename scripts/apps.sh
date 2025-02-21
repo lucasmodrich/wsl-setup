@@ -18,7 +18,15 @@ sudo apt install -y ubuntu-wsl
 sudo apt install -y build-essential
 
 # Common packages
-sudo apt install -y apt-transport-https ca-certificates curl gawk ssh-askpass tree unzip wget zsh cifs-utils
+sudo apt install -y apt-transport-https ca-certificates curl gawk ssh-askpass tree unzip wget cifs-utils
+
+# Install Fish Shell
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt update
+sudo apt install fish
+
+# Install Starship
+curl -sS https://starship.rs/install.sh | sh
 
 # GPG (GnuPG)
 sudo apt install -y gpg gnupg gpg-agent
