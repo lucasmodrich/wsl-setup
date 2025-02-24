@@ -39,11 +39,16 @@ chsh -s $(which fish)
 # Git configs
 git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
+git config --global user.signingkey $GPG_KEY
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
+git config --global gpg.format ssh
 git config --global init.defaultBranch main
 #git config --global --add oh-my-zsh.hide-dirty 1
 #git config --global --add oh-my-zsh.hide-status 1
 # Force Git to use SSH for all GitHub repos for this user
 git config --global url.git@github.com:${GITHUB_USER}.insteadOf https://github.com/${GITHUB_USER}
+
 
 # Install Powerlevel10k
 #git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
