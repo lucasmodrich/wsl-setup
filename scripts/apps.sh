@@ -42,6 +42,14 @@ sudo apt install -y nodejs yarn
 # Go (Go-Lang)
 sudo apt install -y go-lang
 
+# Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#source $HOME/.cargo/env.fish
+sudo apt install -y build-essential pkg-config libssl-dev
+
+# Install NuShell
+#cargo install nu
+
 # Hugo (Snap). APT is out of date
 snap install hugo
 
