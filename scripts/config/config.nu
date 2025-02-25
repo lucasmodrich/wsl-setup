@@ -16,6 +16,9 @@
 #
 # You can remove these comments if you want or leave
 
+# Set the default editor to VS-Code
+$env.config.buffer_editor = "code"
+
 # Start ssh-agent and load its environment variables
 ^ssh-agent -c
 | lines
@@ -37,3 +40,4 @@ keychain --eval --quiet ~/.ssh/id_ed25519
     | transpose --header-row
     | into record
     | load-env
+
