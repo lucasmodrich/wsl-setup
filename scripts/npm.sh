@@ -3,6 +3,9 @@
 # npm packages
 # Add or exclude packages before installation
 
+# Install asdf (nodejs plugin))
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+
 source ./scripts/utils.sh
 . $HOME/.asdf/asdf.sh
 
