@@ -40,7 +40,10 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt install -y nodejs yarn
 
 # Go (Go-Lang)
-sudo apt install -y go-lang
+# https://go.dev/wiki/Ubuntu
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install -y golang-go
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
