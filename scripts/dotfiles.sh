@@ -24,7 +24,8 @@ echo_info "Installing dotfiles..."
 #replace "./scripts/.zshrc" ".zshrc"
 #replace "./scripts/.p10k.zsh" ".p10k.zsh"
 replace "./scripts/config.fish" ".config/fish/config.fish"
-replace "./scripts/config/config.nu" ".config/nushell/config.nu"
+replace "./scripts/starship.toml" ".config/starship/starship.toml"
+#replace "./scripts/config/config.nu" ".config/nushell/config.nu"
 
 # Set Zsh as default shell in Linux
 #chsh -s $(which zsh)
