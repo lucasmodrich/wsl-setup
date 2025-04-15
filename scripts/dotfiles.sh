@@ -24,6 +24,7 @@ echo_info "Installing dotfiles..."
 #replace "./scripts/.zshrc" ".zshrc"
 #replace "./scripts/.p10k.zsh" ".p10k.zsh"
 replace "./scripts/config.fish" ".config/fish/config.fish"
+replace "./scripts/config/fish/conf.d" ".config/fish/conf.d"
 replace "./scripts/starship.toml" ".config/starship/starship.toml"
 #replace "./scripts/config/config.nu" ".config/nushell/config.nu"
 
@@ -36,23 +37,22 @@ chsh -s $(which fish)
 # Set NuShell as the default shell in WSL
 #chsh -s $(which nu)
 
-
 # Fix “zsh compinit: insecure directories” warnings
 #fpath=(/usr/local/share/zsh-completions $fpath)
 
 # Git configs
 git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
-git config --global user.signingkey $GPG_KEY
-git config --global commit.gpgsign true
-git config --global tag.gpgsign true
-git config --global gpg.format ssh
+#git config --global user.signingkey $GPG_KEY
+#git config --global commit.gpgsign true
+#git config --global tag.gpgsign true
+#git config --global gpg.format ssh
 git config --global init.defaultBranch main
 #git config --global --add oh-my-zsh.hide-dirty 1
 #git config --global --add oh-my-zsh.hide-status 1
 # Force Git to use SSH for all GitHub repos for this user
 git config --global url.git@github.com:${GITHUB_USER}.insteadOf https://github.com/${GITHUB_USER}
-
+git config --global core.autocrlf=true
 
 # Install Powerlevel10k
 #git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k

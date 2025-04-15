@@ -54,6 +54,9 @@ sudo apt install -y build-essential pkg-config libssl-dev
 #cargo install nu
 #sudo echo $HOME/.cargo/bin/nu >> /etc/shells
 
+# Keychain for SSH key management
+sudo apt install -y keychain
+
 # Hugo (Snap). APT is out of date
 snap install hugo
 
