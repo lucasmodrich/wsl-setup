@@ -21,18 +21,18 @@ echo_info "Installing dotfiles..."
 #git clone https://github.com/z-shell/F-Sy-H.git ~/.oh-my-zsh/custom/plugins/F-Sy-H
 
 # Move permanent files to Home directory
-#replace "./scripts/.zshrc" ".zshrc"
+replace "./scripts/.zshrc" ".zshrc"
 #replace "./scripts/.p10k.zsh" ".p10k.zsh"
-replace "./scripts/config.fish" ".config/fish/config.fish"
-replace "./scripts/config/fish/conf.d" ".config/fish/conf.d"
-replace "./scripts/starship.toml" ".config/starship/starship.toml"
+#replace "./scripts/config.fish" ".config/fish/config.fish"
+#replace "./scripts/config/fish/conf.d" ".config/fish/conf.d"
+#replace "./scripts/starship.toml" ".config/starship/starship.toml"
 #replace "./scripts/config/config.nu" ".config/nushell/config.nu"
 
 # Set Zsh as default shell in Linux
-#chsh -s $(which zsh)
+chsh -s $(which zsh)
 
 # Set Fish as the default shell in WSL
-chsh -s $(which fish)
+#chsh -s $(which fish)
 
 # Set NuShell as the default shell in WSL
 #chsh -s $(which nu)
