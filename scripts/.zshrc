@@ -1,16 +1,17 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # --------------------------- Theme ------------------------------------
 # ZSH theme
-ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # --------------------------- Paths ------------------------------------
 # oh-my-zsh path
@@ -36,13 +37,15 @@ plugins=(
   zsh-autosuggestions
   zsh-completions
   git
-  ssh-auto
+  #ssh-agent
+  gpg-agent
+  keychain
 )
 
+zstyle :omz:plugins:keychain agents gpg,ssh
+zstyle :omz:plugins:keychain identities $HOME/.ssh/id_ed25519_LMX1
+zstyle :omz:plugins:keychain options --nogui
 source $ZSH/oh-my-zsh.sh
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # --------------------------- Aliases ----------------------------------
 # Copy SSH
@@ -72,5 +75,14 @@ alias winhome="/mnt/c/Users/$(echo $USER)"
 # Open .zshrc in VSCode
 alias zshcfg="code ~/.zshrc"
 
+# BW (Bitwarden Cli Snap)
+alias bw="snap run bw"
+
 # Hugo Snap Alias
 alias hugo="snap run hugo"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Enable Oh My Posh
+eval "$(oh-my-posh init zsh)"
